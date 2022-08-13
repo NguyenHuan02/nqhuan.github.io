@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="../css/loader.css">
     <link rel="icon" type="image/png" href="http://cdn.onlinewebfonts.com/svg/img_364496.png" />
 
     <!-- Font Awesome if you need it
@@ -19,9 +20,27 @@
 
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://th.bing.com/th/id/R.ae74466588ae577ba8dc164696242cac?rik=v%2fXxaV%2fW%2bPWu9g&pid=ImgRaw&r=0');">
+<body onload="myFunction()" class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://th.bing.com/th/id/R.ae74466588ae577ba8dc164696242cac?rik=v%2fXxaV%2fW%2bPWu9g&pid=ImgRaw&r=0');">
 
-
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
@@ -143,6 +162,17 @@
 
             }
         });
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            document.querySelector('.loader').style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
     </script>
 
 </body>
