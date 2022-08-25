@@ -95,6 +95,25 @@ section {
     transform: scale(1.1);
 }
 
+.main-btn2 {
+    color: #fff;
+    background-color: #45f96c;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn2:hover {
+    background-color: #01d220;
+    transform: scale(1.1);
+}
+
 .social-icons a {
     color: #fff;
     font-size: 1.7em;
